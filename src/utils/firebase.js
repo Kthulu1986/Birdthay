@@ -12,4 +12,6 @@ const firebaseConfig = {
 
   //para reutilizar en otros componentes y no importar todo el codigo
   export default firebase.initializeApp(firebaseConfig);
+  firebase.firestore().settings({ experimentalForceLongPolling: true });
+
   
